@@ -15,7 +15,7 @@ class Form(FlaskForm):
 @app.route('/', methods=['GET', 'POST'])
 def home():
     form = Form()
-    co = cohere.Client('YOUR API KEY')
+    co = cohere.Client('Test API')
 
     if form.validate_on_submit():
         text = form.text.data
